@@ -11,18 +11,18 @@
 </head>
 
 <body>
-<nav class="navbar navbar-dark navbar-expand-sm  nav_des fixed-top">
+<nav class="navbar navbar-dark navbar-expand-lg  nav_des ">
         <div class="container">
         <a href="/" class="navbar-brand">
         <img src="./assets/images/logo.png" alt="website_logo" class="main_logo">
         </a>
        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
         </button>
 
 
-        <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div id="navbarCollapse" class="collapse navbar-collapse nav_box_header">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a href="#home" class=" nav__link w-nav-link w--current-active">
@@ -96,7 +96,7 @@
             </div>
             <div class="col-md-3 col-lg-3 col-12" >
             <div id="service_icon_box">
-            <div class="service__icon"><div class="service__text-icon"><i class="fa-solid fa-bookmark"></i></div></div>
+            <div class="service__icon"><div class="service__text-icon"><i class="fa-regular fa-bookmark"></i></div></div>
             <h3 class="item-ttl item-ttl_service">Professional Services<br></h3>
             <p class="item-text item-text_service">if you have employees, we can handle all payroll processing on your behalf. We are well-versed in payroll laws and can take this time-consuming off your plate.<br>
         </p></div>
@@ -104,7 +104,7 @@
             <div class="col-md-3 col-lg-3 col-12" >
             <div id="service_icon_box">
             <div class="service__icon"><div class="service__text-icon"><i class="fa-solid fa-cart-shopping"></i></div></div>
-            <h3 class="item-ttl item-ttl_service">Amazon - Ecommerce<br></h3>
+            <h3 class="item-ttl item-ttl_service">Technology<br></h3>
             <p class="item-text item-text_service">Get the exact report you need delivered to your inbox, weekly, bi-weekly, or mounthly<br>
         </p></div>
             </div>
@@ -304,6 +304,13 @@
 </section>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+
+
 </html>
