@@ -552,9 +552,7 @@ div#navbarCollapse ul li a:focus {
 .w--current-active {
     color: #00b6f6!important;
 }
-.nav__link:hover, .nav__link.w--current {
-    color: #00b6f6;
-}
+
 
 
 @media screen and (max-width: 767px) {
@@ -704,6 +702,7 @@ div#navbarCollapse ul li a:focus {
         padding-top: 120px;
         padding-bottom: 160px;
     }
+     
   }
 
   @media only screen and (min-width:820px) and (max-width: 767px)  {
