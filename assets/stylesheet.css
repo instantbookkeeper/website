@@ -695,6 +695,15 @@ div#navbarCollapse ul li a:focus {
     .item-text {
         text-align: left;
     }
+    .card_box_about {
+        padding: 30px;
+    }
+    section.contact_us {
+       
+        background-attachment: inherit;
+        padding-top: 120px;
+        padding-bottom: 160px;
+    }
   }
 
   @media only screen and (min-width:820px) and (max-width: 767px)  {
