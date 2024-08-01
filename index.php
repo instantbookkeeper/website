@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Instant bookkeeper</title>
-    <link rel="icon" href="./assets/images/logof.png" type="image/png">
 	<link rel="stylesheet" href="./assets/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +13,7 @@
 <body>
 <nav class="navbar navbar-dark navbar-expand-lg  nav_des ">
         <div class="container">
-        <a href="instantbookkeeper/#home" class="navbar-brand">
+        <a href="/" class="navbar-brand">
         <img src="./assets/images/logo.png" alt="website_logo" class="main_logo">
         </a>
        
@@ -26,22 +25,32 @@
         <div id="navbarCollapse" class="collapse navbar-collapse nav_box_header">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-            <a href="#home" class="nav__link w-nav-link w--current">Home</a>
+                <a href="#home" class=" nav__link w-nav-link w--current-active">
+                    Home
+                </a>
             </li>
             <li class="nav-item">
-            <a href="#services" class="nav__link w-nav-link">Services</a>
+                <a href="#services" class="nav__link w-nav-link w--current ">
+                    Service
+                </a>
             </li>
             <li class="nav-item">
-            <a href="#about" class="nav__link w-nav-link">About</a>
+                <a href="#about" class=" nav__link w-nav-link w--current ">
+                    About
+                </a>
             </li>
             <li class="nav-item">
-            <a href="#feature" class="nav__link w-nav-link">Features</a>
+                <a href="#feature" class=" nav__link w-nav-link w--current ">
+                  Features
+                </a>
             </li>
             <li class="nav-item">
-                <a href="#pricing" class="nav__link w-nav-link">Pricing</a>
+                <a href="#pricing" class=" nav__link w-nav-link w--current ">
+                  Pricing
+                </a>
             </li>
             <li  class="nav__link">
-            <a href="#contact-us" class="nav__link nav-link_contact-us w-nav-link">Contact Us</a>
+            <a href="#contact-us" class=" nav-link_contact-us ">Contact Us</a>
 </li>
         </ul>
         </div>
@@ -68,8 +77,8 @@
     <h2 class="service_headline__ttl">That Best Solution For <br>Your Amazon Business<br></h2>
     <p class="Service_headline__subttl">We take a unique approach to bookkeeping by giving your a clear and complette picture of your expenses and sales by item. You'll be able to determine the profit margins on a single item as well as the Cost of Goods sold and all of the expenses directly associated with that item. If you've used QuickBooks Online, you know that there is no simple way to do it.<br></p></div>
     </div>
-    <div class="service_box  desktop_blck">
-       <div class="row">
+    <div class="service_box">
+    <div class="row">
         
             <div class="col-md-3 col-lg-3 col-12" >
             <div id="service_icon_box">
@@ -94,48 +103,13 @@
             </div>
             <div class="col-md-3 col-lg-3 col-12" >
             <div id="service_icon_box">
-            <div class="service__icon"><div class="service__text-icon"><i class="fa-regular fa-square-check"></i></div></div>
+            <div class="service__icon"><div class="service__text-icon"><i class="fa-solid fa-cart-shopping"></i></div></div>
             <h3 class="item-ttl item-ttl_service">Technology<br></h3>
             <p class="item-text item-text_service">Get the exact report you need delivered to your inbox, weekly, bi-weekly, or mounthly<br>
         </p></div>
             </div>
         </div>
     </div>
-    <div class="service_box  desktop_hide">
-       <div class="row">
-        
-            <div class="col-md-12  col-12" >
-            <div id="service_icon_box">
-            <div class="service__icon"><div class="service__text-icon"><i class="fa-solid fa-box"></i></div></div>
-            <h3 class="item-ttl item-ttl_service">Amazon - Ecommerce<br></h3>
-            <p class="item-text item-text_service">Amazon Bookkeeping: Our many years of experience in the Amazon business gives us the unique advantage of being able to help you with your amazon numbers. We help Amazon sift to the bottom of every, figure out their itemized profits, and become more profitable.<br>
-        </p></div>
-            </div>
-            <div class="col-md-12 3 col-12" >
-            <div id="service_icon_box">
-            <div class="service__icon"><div class="service__text-icon"><i class="fa-solid fa-earth-americas"></i></div></div>
-            <h3 class="item-ttl item-ttl_service">Real Estate<br></h3>
-            <p class="item-text item-text_service">If you're concerned bout FBA sales tax compliance, we'll manage yours sales tax process so that you don't have to worry about any audits.<br>
-        </p></div>
-            </div>
-            <div class="col-md-12  col-12" >
-            <div id="service_icon_box">
-            <div class="service__icon"><div class="service__text-icon"><i class="fa-regular fa-bookmark"></i></div></div>
-            <h3 class="item-ttl item-ttl_service">Professional Services<br></h3>
-            <p class="item-text item-text_service">if you have employees, we can handle all payroll processing on your behalf. We are well-versed in payroll laws and can take this time-consuming off your plate.<br>
-        </p></div>
-            </div>
-            <div class="col-md-12  col-12" >
-            <div id="service_icon_box">
-            <div class="service__icon"><div class="service__text-icon"><i class="fa-regular fa-square-check"></i></div></div>
-            <h3 class="item-ttl item-ttl_service">Technology<br></h3>
-            <p class="item-text item-text_service">Get the exact report you need delivered to your inbox, weekly, bi-weekly, or mounthly<br>
-        </p></div>
-            </div>
-        </div>
-    </div>
-
-
 </div>
 </section>
 <section class="about" id="about">
@@ -252,18 +226,6 @@
     <div class="mb-3 mt-3">
     <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Message"></textarea>
     </div>
-
-
-    <div class="mb-3 mt-3">
-   
-   <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-nhgngr8mep93" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld39-sZAAAAAKX3knBmBarXEooImy1UzOsAqRFc&amp;co=aHR0cHM6Ly93d3cuaW5zdGFudGJvb2trZWVwZXIuY29tOjQ0Mw..&amp;hl=en-GB&amp;v=hfUfsXWZFeg83qqxrK27GB8P&amp;size=normal&amp;cb=hqmaybwgmyb5"></iframe></div>
-   
-   
-    </div>
-
-
-
-
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
             </div>
@@ -271,9 +233,11 @@
     </div>
 </section>
 <footer class="sec_footer">
-    <div class="container">
-    <div class="main_footer_content desktop_block">
-       <div class="row">
+    
+
+<div class="container">
+    <div class="main_footer_content">
+    <div class="row">
         <div class="col-md-4 col-lg-4 col-12">
         <div id="img_footer" class="column_footer footer_d1">
         <img src="./assets/images/logo.png" alt="" class="logo_footer">
@@ -288,13 +252,13 @@
      <div class="footer__item-row">
       <div class="footer__item-icon"><i class="fa-solid fa-location-dot"></i></div>
       <p class="contact__text">Instant Bookkeeper Inc<br>2 Perlman Dr Suite 205<br>Spring Valley, NY 10977</p></div>
-       <div class="footer__item-row">
-       <div class="footer__item-icon"><i class="fa-solid fa-phone"></i></div>
-      <a href="tel:845-554-5542" class="contact__text contact__text_link">845-554-5542</a></div>
-        <div class="footer__item-row"><div class="footer__item-icon"><i class="fa-regular fa-envelope"></i></div><a href="mailto:info@instantbookkeeper.com" class="contact__text contact__text_link">
-       <span>info@instantbookkeeper.com</span></a></div>
-      <div class="footer__item-row"><div class="footer__item-icon"><i class="fa-brands fa-internet-explorer"></i></div>
-       <a href="#" class="contact__text contact__text_link">https://instantbookkeeper.com</a></div>
+    <div class="footer__item-row">
+    <div class="footer__item-icon"><i class="fa-solid fa-phone"></i></div>
+    <a href="tel:845-554-5542" class="contact__text contact__text_link">845-554-5542</a></div>
+    <div class="footer__item-row"><div class="footer__item-icon"><i class="fa-regular fa-envelope"></i></div><a href="mailto:info@instantbookkeeper.com" class="contact__text contact__text_link">
+    <span>info@instantbookkeeper.com</span></a></div>
+    <div class="footer__item-row"><div class="footer__item-icon"><i class="fa-brands fa-internet-explorer"></i></div>
+    <a href="#" class="contact__text contact__text_link">https://instantbookkeeper.com</a></div>
 
 
         </div>
@@ -323,106 +287,13 @@
         </div>
 
 
-        </div>
-     </div>
-
-    
-
-    
-
-
-
-   
-
-     </div>
-
-   
-
-
-
+        </div></div>
 
 
 
 
     </div>
-    <div class="main_footer_content desktop_hide">
-    
-        <div id="img_footer" class="column_footer footer_d1">
-        <img src="./assets/images/logo.png" alt="" class="logo_footer">
-        </div>  
-        
-
-
-       <div class="row">
-        
-
-
-        <div class="col-md-5 col-lg-5 col-12">
-        <div id="img_footer" class="column_footer footer_d1">
-
-        <h4>Contact info</h4>
-     <div class="footer__item-row">
-      <div class="footer__item-icon"><i class="fa-solid fa-location-dot"></i></div>
-      <p class="contact__text">Instant Bookkeeper Inc<br>2 Perlman Dr Suite 205<br>Spring Valley, NY 10977</p></div>
-       <div class="footer__item-row">
-       <div class="footer__item-icon"><i class="fa-solid fa-phone"></i></div>
-      <a href="tel:845-554-5542" class="contact__text contact__text_link">845-554-5542</a></div>
-        <div class="footer__item-row"><div class="footer__item-icon"><i class="fa-regular fa-envelope"></i></div><a href="mailto:info@instantbookkeeper.com" class="contact__text contact__text_link">
-       <span>info@instantbookkeeper.com</span></a></div>
-      <div class="footer__item-row"><div class="footer__item-icon"><i class="fa-brands fa-internet-explorer"></i></div>
-       <a href="#" class="contact__text contact__text_link">https://instantbookkeeper.com</a></div>
-
-
-        </div>
-        </div>
-
-
-        <div class="col-md-5 col-lg-5 col-12"><div id="img_footer" class="column_footer footer_d1">
-        <h4>Working hours</h4>
-      <div class="footer__text footer__text_gh">We work whenever we can, but our phone works on the following schedule.</div>
-      <div class="footer__text footer__text_week">Monday - Friday: 9:00 - 17:00<br>Sunday and holidays: 12:00 - 03:00<br>Saturday: Closed</div>
-
-        </div>
-       </div>
-
-
-
-
-        <div class="col-md-2 col-lg-2 col-12"><div id="img_footer" class="column_footer footer_d4">
-        <h4>Social</h4>
-        <div class="social_icon_footer">
-        <a href="#" target="_blank" class="social__icon "><div><i class="fa-brands fa-twitter"></i></div></a>
-        <a href="#" target="_blank" class="social__icon "><div><i class="fa-brands fa-facebook-f"></i></div></a>
-        <a href="#" target="_blank" class="social__icon "><div><i class="fa-brands fa-skype"></i></div></a>
-        <a href="#" target="_blank" class="social__icon "><div><i class="fa-brands fa-linkedin-in"></i></div></a>
-        <a href="#" target="_blank" class="social__icon "><div><i class="fa-solid fa-basketball"></i></div></a>
-        </div>
-
-
-        </div>
-     </div>
-
-    
-
-    
-
-
-
-   
-
-     </div>
-
-   
-
-
-
-
-
-
-
     </div>
-
-
 </div>
 
 </footer>
@@ -439,35 +310,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 
-<script>
 
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav__link');
-    const homeLink = document.getElementById('home-link');
-
-    function setActiveLink() {
-        let index = 0;
-        navLinks.forEach((link, i) => {
-            const section = document.querySelector(link.getAttribute('href'));
-            if (section && section.getBoundingClientRect().top < window.innerHeight / 2) {
-                index = i;
-            }
-        });
-
-        navLinks.forEach((link, i) => {
-            link.classList.toggle('w--current', i === index);
-        });
-    }
-
-    setActiveLink();
-    window.addEventListener('scroll', setActiveLink);
-});
-
-
-</script>
 
 
 </html>
