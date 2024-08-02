@@ -9,12 +9,10 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
-.container {
-    z-index: 10;
-    max-width: 1140px!important;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+.nav-link_contact-us {
+    margin-top: -7px;
+    align-items: center;
+    text-align: center;
 }
 .nav_box_header {
     flex-basis: 100%;
@@ -59,9 +57,9 @@ a.navbar-brand img {
     vertical-align: top;
     color: #222;
     text-align: left;
-    margin-left: auto;
+    margin-left: auto!important;
     margin-right: auto;
-    padding: 20px;
+    padding: 20px!important;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -83,7 +81,8 @@ a.nav-link_contact-us {
     margin-left: 20px;
     transition: background-color .4s;
     text-decoration: none;
-    padding: 13px 30px;
+    padding: 13px 30px!important;
+    margin-top: 0px;
 }
 .nav__link:hover {
     color: #00b6f6;
@@ -569,6 +568,9 @@ span.navbar-toggler-icon i {
     outline: 0;
     box-shadow:unset;
 }
+.row.desktop_hide {
+    display: none;
+}
 @media screen and (max-width: 767px) {
     .main_banner {
        
@@ -727,6 +729,7 @@ span.navbar-toggler-icon i {
     form.form_desi {
         padding: 25px 15px;
     }
+ 
   }
 
   @media only screen and (min-width:768px) and (max-width: 820px)  {
@@ -795,6 +798,19 @@ span.navbar-toggler-icon i {
     }
     .card_about {
         background-attachment: inherit;
+        position: relative;
+    }
+    .row.desktop_block {
+        display: none;
+    }
+    .row.desktop_hide {
+        display: block;
+    }
+    .feature_inner .section__headline {
+        padding-left: 3px;
+    }
+    .frm_contact {
+        padding: 60px 7px;
         position: relative;
     }
     }
@@ -867,6 +883,15 @@ span.navbar-toggler-icon i {
             background-attachment: inherit;
             position: relative;
         }
+        .row.desktop_block {
+            display: none;
+        }
+        .row.desktop_hide {
+            display: block;
+        }
+        .feature_inner .section__headline {
+            padding-left: 3px;
+        }
         }
     @media only screen and (min-width:912px) and (max-width: 912px)  {
     
@@ -936,6 +961,15 @@ span.navbar-toggler-icon i {
             background-attachment: inherit;
             position: relative;
         }
+        .row.desktop_block {
+            display: none;
+        }
+        .row.desktop_hide {
+            display: block;
+        }
+        .feature_inner .section__headline {
+            padding-left: 3px;
+        }
         }
     
         @media only screen and (min-width:1024px) and (max-width: 1024px)  {
@@ -993,6 +1027,10 @@ span.navbar-toggler-icon i {
             .card_about {
                 background-attachment: inherit;
                 position: relative;
+            }
+           
+            .feature_inner .section__headline {
+                padding-left: 3px;
             }
             }
         

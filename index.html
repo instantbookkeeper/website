@@ -11,10 +11,10 @@
 
 </head>
 
-<body> 
+<body>
 <nav class="navbar navbar-dark navbar-expand-lg  nav_des ">
         <div class="container">
-        <a href="instantbookkeeper/#home" class="navbar-brand">
+        <a href="#" class="navbar-brand">
         <img src="./assets/images/logo.png" alt="website_logo" class="main_logo">
         </a>
        
@@ -172,29 +172,63 @@
      <img src="./assets/images/fe-img.jpeg" alt="feature" class="img_fe_des">
      </div>
     </div>
-    <div class="col-md-8 col-lg-8 col-12">
-    <div class="section__headline"><div class="headline__label">Features</div><h2 class="headline__ttl">Why Choose Instant Bookkeeper?<br></h2><p class="headline__subttl">Bookkeeping, Payroll, and taxes can all be stressful. We can handle all of these business tasks on your behalf so that you can actually enjoy running your Amazon business. There are countless benefits to outsourcing your Amazon business bookkeeping to us including:
+      <div class="col-md-8 col-lg-8 col-12">
+       <div class="section__headline"><div class="headline__label">Features</div><h2 class="headline__ttl">Why Choose Instant Bookkeeper?<br></h2><p class="headline__subttl">Bookkeeping, Payroll, and taxes can all be stressful. We can handle all of these business tasks on your behalf so that you can actually enjoy running your Amazon business. There are countless benefits to outsourcing your Amazon business bookkeeping to us including:
         
-    <br></p>
-    <div class="row">
-     <div class="col-md-6 col-12 pt-3">
-<div class="fe_in_small">
-<h3 class="item-ttl">Time Savings<br></h3>
-<p class="item-text">Let's be honest. Bookkeeping for Amazon sellers is complicated and time consuming. Rather than spending your precious time working with spreadsheets or trying to figure out how and what to input in QuickBooks, leave the bookkeeping to the professionals at Instant Bookkeeper</p>
-</div>
-     </div>  
-     <div class="col-md-6 col-12 pt-3">
-     <div class="fe_in_small">
-     <h3 class="item-ttl">Increased Profits<br></h3>
-     <p class="item-text">If your goal to make more money and ensure your Amazon business thrives, our bookkeeping services can help. You'll be able to see which items are working, which ones are not, and how you can maximize your ROI. You won't have to wonder how to grow your business because our bookkeeping services will have all the answers.</p>
-     </div>
-     </div> 
+       <br>
+        </p>
+      <div class="row desktop_block">
+          <div class="col-md-6 col-12 pt-3">
+         <div class="fe_in_small">
+          <h3 class="item-ttl">Time Savings<br></h3>
+          <p class="item-text">Let's be honest. Bookkeeping for Amazon sellers is complicated and time consuming. Rather than spending your precious time working with spreadsheets or trying to figure out how and what to input in QuickBooks, leave the bookkeeping to the professionals at Instant Bookkeeper</p>
+          </div>
+          </div>  
+
+         <div class="col-md-6 col-12 pt-3">
+          <div class="fe_in_small">
+          <h3 class="item-ttl">Increased Profits<br></h3>
+          <p class="item-text">If your goal to make more money and ensure your Amazon business thrives, our bookkeeping services can help. You'll be able to see which items are working, which ones are not, and how you can maximize your ROI. You won't have to wonder how to grow your business because our bookkeeping services will have all the answers.</p>
+           </div>
+           </div> 
     
-    <div>
-    </div>
-</div>
-</div>
- </div>   
+          <div>
+           </div>
+           </div>
+           </div>
+
+
+           <div class="row desktop_hide">
+          <div class="col-md-12 col-12 pt-3">
+         <div class="fe_in_small">
+          <h3 class="item-ttl">Time Savings<br></h3>
+          <p class="item-text">Let's be honest. Bookkeeping for Amazon sellers is complicated and time consuming. Rather than spending your precious time working with spreadsheets or trying to figure out how and what to input in QuickBooks, leave the bookkeeping to the professionals at Instant Bookkeeper</p>
+          </div>
+          </div>  
+
+         <div class="col-md-12 col-12 pt-3">
+          <div class="fe_in_small">
+          <h3 class="item-ttl">Increased Profits<br></h3>
+          <p class="item-text">If your goal to make more money and ensure your Amazon business thrives, our bookkeeping services can help. You'll be able to see which items are working, which ones are not, and how you can maximize your ROI. You won't have to wonder how to grow your business because our bookkeeping services will have all the answers.</p>
+           </div>
+           </div> 
+    
+          <div>
+           </div>
+           </div>
+           </div>
+        
+         </div> 
+ 
+         
+        
+         </div> 
+
+
+
+
+
+ 
 </div>
 </section>
 
@@ -446,11 +480,13 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav__link');
-    const homeLink = document.getElementById('home-link');
+    const contactLink = document.querySelector('.nav-link_contact-us');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
 
     function setActiveLink() {
         let index = 0;
         navLinks.forEach((link, i) => {
+            if (link === contactLink) return; // Skip the contact link
             const section = document.querySelector(link.getAttribute('href'));
             if (section && section.getBoundingClientRect().top < window.innerHeight / 2) {
                 index = i;
@@ -458,13 +494,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         navLinks.forEach((link, i) => {
-            link.classList.toggle('w--current', i === index);
+            if (link !== contactLink) {
+                link.classList.toggle('w--current', i === index);
+            }
         });
     }
+
+    function closeNavbar() {
+        if (navbarCollapse.classList.contains('show')) {
+            // Bootstrap-specific: trigger the toggle button to collapse the menu
+            document.querySelector('.navbar-toggler').click();
+        }
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeNavbar);
+    });
 
     setActiveLink();
     window.addEventListener('scroll', setActiveLink);
 });
+
 
 
 </script>
