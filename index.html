@@ -392,7 +392,7 @@
     <style>
 
     </style>
-    <section class="t">
+    <section class="review">
         <div class="container">
             <div class="heading">
                 <h4 style="text-align: center;">Testimonials</h4>
@@ -434,7 +434,8 @@
                         padding: 8px 16px;
                         /* Adjust button size for smaller screens */
                     }
-                    .slide{
+
+                    .slide {
                         width: 100%;
                     }
                 }
