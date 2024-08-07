@@ -423,6 +423,9 @@
                     margin: 0 5px;
                     cursor: pointer;
                 }
+                .slide {
+                        width: 100%;
+                    }
 
                 @media (max-width: 768px) {
                     .testimonial img {
