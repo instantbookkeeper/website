@@ -392,7 +392,7 @@
     <style>
 
     </style>
-    <section class="review">
+    <section class="review" style="display: none;">
         <div class="container">
             <div class="heading">
                 <h4 style="text-align: center;">Testimonials</h4>
